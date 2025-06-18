@@ -1,5 +1,4 @@
 .popup_is-opened {
-  display: flex;
  visibility: visible; /* Показываем в потоке документа */
   opacity: 1;         /* Полная непрозрачность */
   transition: 

@@ -12,19 +12,13 @@ function handleOverlayClick(evt) {
 }
 
 export function openModal(modal) {
-  modal.style.display = 'flex';
-  setTimeout(() => {
-    modal.classList.add('popup_is-opened');
-  }, 10);
+  modal.classList.add('popup_is-opened');
   document.addEventListener('keydown', handleEscapeKey);
   modal.addEventListener('mousedown', handleOverlayClick);
 }
 
 export function closeModal(modal) {
   modal.classList.remove('popup_is-opened');
-  setTimeout(() => {
-    modal.style.display = 'none';
-  }, 300);
   document.removeEventListener('keydown', handleEscapeKey);
   modal.removeEventListener('mousedown', handleOverlayClick);
 }

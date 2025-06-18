@@ -1,7 +1,8 @@
 .popup_is-opened {
   display: flex;
-  visibility: visible;
-  opacity: 1;
-  pointer-events: all;
-  transition: visibility 0s, opacity 0.6s;
+ visibility: visible; /* Показываем в потоке документа */
+  opacity: 1;         /* Полная непрозрачность */
+  transition: 
+    visibility 0s linear, /* Без задержки при открытии */
+    opacity 0.5s ease;
 }
